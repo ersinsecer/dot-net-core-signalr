@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "SignalR Giriş";
+}
+
+<div class="container">
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-12">
+            <table>
+                <tr>
+                    <td>UserName</td>
+                    <td><input type="text" id="userInput" /></td>
+                </tr>
+                <tr>
+                    <td>Message</td>
+                    <td><input type="text" id="messageInput" /></td>
+                    <td>
+                        <select id="group">
+                            <option value="All">Everyone</option>
+                            <option value="Myself">Myself</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <input type="button" id="sendButton" value="Send Message" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <ul id="messages"></ul>
+        </div>
+    </div>
+</div>
+<script src="~/lib/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/SignalR.js"></script>
